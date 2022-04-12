@@ -10,10 +10,11 @@ copyright.innerHTML = `Talaizia Morris ${thisYear}`;
 footer.append(copyright);
 
 const skills = [
-    'typing',
-    'microsoft applications',
+    'Typing',
+    'Microsoft Applications',
     'JavaScript',
-    'HTML'
+    'HTML',
+    'CSS'
 ];
 
 const skillsSection = document.getElementById('skills');

@@ -2,15 +2,14 @@
 <html>
 <head>
      <title>Talaizia Morris' Portfolio</title>
-     <style>
-         body {background-color: rgb(229, 226, 229);}
-         h1 {color: black;}
-         p {color: black;}
-     </style>
+     
+     <link rel="stylesheet" href="css/index.css">
+     
 </head>
 <body>
-    <section>
-    <h1>About</h1>
+
+    <section id="about"> 
+    <h1 class="headings">About</h1>
     <p>Since graduating college with a degree in Exercise Science I have switched over to IT.
 I have always had a natural talent for computer science since middle school, but I never realized 
 how important it is until I was in college. Currently, I work as a technician at Apple and 
@@ -18,8 +17,8 @@ am currently building my skills. My ultimate career goal is Business analyst. So
 consist of exercising, cooking, fashion/modeling, traveling, and being in nature.</p>
     </section>
 
-    <section>
-    <h1>Experience </h1>
+    <section id="experience">
+    <h1 class="headings">Experience </h1>
     <p>I got the chance to do an apprenticeship working as a Jr. Business Consultant at The Babcock
 & Wilcox company which was honestly alot because I was finishing up my last few classes of 
 undergrad. Over the past 2 years I have gotten the chance to help work on an health insurance
@@ -30,41 +29,41 @@ to help me prepare for a big time job.</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-            <ul>
+        <h2 class="headings">Skills:</h2>
+            <ul id="skillsList">
                 
             </ul>
     </section>
     
-    <section>
-    <h1>Connect</h1>
+    <section id="connect">
+    <h1 class="headings">Connect</h1>
         <a href = "mailto: talaiziamorris1@gmail.com" >talaiziamorris1@gmail.com</a>
         <a href = "https://www.linkedin.com/in/talaizia-morris/"> LinkedIn Profile</a>
     </section>
     
     <section>
-        <h2>Leave a Message</h2>
+        <h2 class="leavingMessages">Leave a Message</h2>
 
         <form name="leave_message">
         
             <table>
             <tr>
-                <td><label>Name:</label></td>
+                <td><label class="name">Name:</label></td>
                 <td><input type="text" name="name" required="true"></td>
             </tr>
 
             <tr>
-                <td><label>Email:</label></td>
+                <td><label class="email">Email:</label></td>
                 <td><input type="email" name="email" required="true"></td>
             </tr>
 
             <tr>
-                <td><label>Message:</label></td>
+                <td><label class="messages">Message:</label></td>
                 <td><textarea name="message" required="true"></textarea></td>
             </tr>
 
             <tr>
-                <td><button type="submit">Submit</button></td>
+                <td><button type="submit" class="submit">Submit</button></td>
             </tr>
             </table>
 
@@ -83,7 +82,7 @@ to help me prepare for a big time job.</p>
 
     </section>
 
- <footer>
+ <footer id="footer">
 
 </footer>
     

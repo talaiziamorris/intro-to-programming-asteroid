@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(240, 221, 161);
+}
+#about {
+    text-align: center;
+    background-color: rgba(194, 137, 32, 0.918);
+    border: 3px dotted black;
+    margin: 10%
+}
+#experience {
+    text-align: center;
+    border: 3px dotted black;
+    margin: 5%;
+    background-color: rgb(194, 165, 69);
+}
+.headings {
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+#skillsList {
+    border: 5px solid rgb(83, 58, 10);
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#connect {
+    text-align: center;
+}
+.leavingMessages{
+    color:rgb(37, 26, 5)
+}
+.name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(233, 94, 2);
+}
+.email{
+    color: rgb(233, 94, 2);  
+}
+.messages{
+    color: rgb(233, 94, 2);
+}
+.submit{
+    background-color: rgb(170, 112, 36);
+    border: .5px none;
+    margin-left: 200%;
+}
+#footer{
+    border: 4px outset rgb(173, 173, 87);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: .08cm;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 5%;
+}
