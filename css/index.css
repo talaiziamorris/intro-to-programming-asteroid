@@ -1,3 +1,55 @@
+
+#body {
+    background-color: pink;
+    padding: 1rem;
+}
+
+.about, .experience {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(38, 143, 104);
+    border: 8px double rgb(107, 31, 158);
+    margin-left: 12em;
+    margin-right: 12rem;
+}
+.aboutP, .experienceP {
+    text-align:left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.skillsHeader {
+    color: rgb(107, 31, 158);
+    text-align: center;
+}
+#skills {
+    background-color: rgb(165, 252, 220);
+    margin-left: 2rem;
+    margin-right: 70%;
+    border: 5px dotted orangered;
+}
+#connect {
+    color:rgb(38, 143, 104);
+}
+.leftMessages {
+    color: rgb(38, 143, 104);
+}
+#name, #email, #messageMe {
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+#message {
+    color:rgb(38, 143, 104);
+}
+#footer {
+    color:rgb(107, 31, 158);
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 3mm;
+}
 body {
     background-color: rgb(240, 221, 161);
 }
@@ -52,4 +104,7 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
+}
+@media screen (min-width: 320px) and (max-width: 680px) {
+    margin: 0, 1rem, 1rem, 0;
 }
