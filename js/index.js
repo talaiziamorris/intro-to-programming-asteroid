@@ -19,15 +19,14 @@ const skills = [
 
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
-console.log(skillsSection);
-console.log(skillsList); 
+
 
 for (let listItem of skills) {
     const skill = document.createElement('li');
     skill.innerHTML = listItem;
     skillsList.append(skill);
-    
-    //console.log(listItem);//
+    //console.log(skillsList);
+    //console.log(listItem);
 };
 
 //lesson 4-3

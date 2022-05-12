@@ -70,11 +70,6 @@ body {
     font-family: fantasy;
     text-decoration: underline;
 }
-#skillsList {
-    border: 5px solid rgb(83, 58, 10);
-    margin-left: 40%;
-    margin-right: 40%;
-}
 #connect {
     text-align: center;
 }
