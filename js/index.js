@@ -26,6 +26,7 @@ for (let listItem of skills) {
     skill.innerHTML = listItem;
     skillsList.append(skill);
     //console.log(skillsList);
+    //console.log(listItem);
 };
 
 //lesson 4-3
