@@ -1,7 +1,6 @@
 var today = new Date();
 var thisYear = today.getFullYear(); 
-//console.log(today);//
-//console.log(thisYear);//
+
 
 const footer = document.querySelector('footer');
 const copyright = document.createElement('p');
@@ -25,26 +24,19 @@ for (let listItem of skills) {
     const skill = document.createElement('li');
     skill.innerHTML = listItem;
     skillsList.append(skill);
-    //console.log(skillsList);
-    //console.log(listItem);
+    
 };
 
 //lesson 4-3
 messageForm = document.getElementsByName('leave_message')[0];
-//console.log(messageForm);
+
 
 //create submit button for message form
 messageForm.addEventListener('submit', myFunction => {
-    //console.log('event listener working');
     myFunction.preventDefault();
     const name = myFunction.target.name.value;
-    //console.log(name);
     const email =  myFunction.target.email.value;
-    //console.log(email);
     const message = myFunction.target.message.value;
-    //console.log(message);
-
-    //console.log('3 variables successfully created');
 
     //Display messages in list
     const messageSection = document.getElementById('message');
@@ -71,3 +63,20 @@ messageForm.addEventListener('submit', myFunction => {
     messageList.appendChild(removeButton);
     messageForm.reset();
 });
+
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET', 'https://api.github.com/users/talaizamorris/repos');
+githubRequest.send();
+
+githubRequest.addEventListener('load', function() {
+    const repositories = JSON.parse(this.response);
+    const projectSection = document.getElementById(projects);
+    const projectList = projectSection.querySelector('ul');
+        for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement('li');
+        project.innerHTML = repositories[i];
+        projectsList.appendChild(project);
+    }
+});
+
+
