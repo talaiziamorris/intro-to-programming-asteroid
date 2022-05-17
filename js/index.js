@@ -65,18 +65,20 @@ messageForm.addEventListener('submit', myFunction => {
 });
 
 var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET', 'https://api.github.com/users/talaizamorris/repos');
+githubRequest.open("GET", "https://api.github.com/users/talaiziamorris/repos");
 githubRequest.send();
 
-githubRequest.addEventListener('load', function() {
-    const repositories = JSON.parse(this.response);
+
+
+githubRequest.addEventListener("load", () => {
+    const repositories = JSON.parse(this.respnse);
+    console.log(repositories, 'im a test');
     const projectSection = document.getElementById(projects);
     const projectList = projectSection.querySelector('ul');
-        for (let i = 0; i < repositories.length; i++) {
+
+    for (let i = 0; i < repositories.length; i++) {
         const project = document.createElement('li');
-        project.innerHTML = repositories[i];
+        project.innerHTML = `${repositories[i]}`;
         projectsList.appendChild(project);
     }
 });
-
-
